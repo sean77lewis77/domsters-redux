@@ -1,6 +1,6 @@
 #header {
     background-color: #334;
-    background-image: url(../images/guitarist.gif);
+    background-image: url(../../img/guitarist.gif);
     background-repeat: no-repeat;
     background-position: bottom right;
     border-width: .1em;
@@ -11,4 +11,20 @@
 #header {
     color: #ec8;
     border-color: #667;
+}
+
+#about #header {
+  background-image: url(../images/lineup.gif);
+}
+
+#photos #header {
+  background-image: url(../images/basshead.gif);
+}
+
+#live #header {
+  background-image: url(../images/bassist.gif);
+}
+
+#contact #header {
+  background-image: url(../images/drummer.gif);
 }

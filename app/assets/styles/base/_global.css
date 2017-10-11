@@ -19,6 +19,7 @@ img {
 body {
   color: #fb5;
   background-color: #334;
+  font-size: 1.2rem;
 }
 
 a:link {
@@ -117,14 +118,9 @@ tr.highlight td {
   background-color: #cba;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   margin: 1em 10%;
-  background-image: url(../images/background.gif);
+  background-image: url(/assets/img/background.gif);
   background-attachment: fixed;
   background-position: top left;
   background-repeat: repeat-x;
@@ -248,15 +244,6 @@ fieldset {
 
 td {
   padding: .5em 3em;
-}
-
-body {
-  font-size: 76%;
-  font-family: "Helvetica", "Arial", sans-serif;
-}
-
-body * {
-  font-size: 1em;
 }
 
 a {

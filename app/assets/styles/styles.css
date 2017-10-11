@@ -4,3 +4,6 @@
 @import 'base/_global.css';
 @import 'modules/_header.css';
 @import 'modules/_content.css';
+@import 'modules/_table.css';
+@import 'modules/_navigation.css';
+@import 'modules/_gallery.css';

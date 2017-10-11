@@ -27,3 +27,15 @@ img#preview {
   border-width: 0;
   outline-width: 0;
 }
+
+
+#slideshow {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+#imagegallery li {
+  list-style-type: none;
+}

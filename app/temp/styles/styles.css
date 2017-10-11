@@ -450,8 +450,6 @@ template {
   display: none;
 }
 
-/*@import 'base/_variables';*/
-
 /*@import 'base/_mixins';*/
 
 html {
@@ -459,23 +457,15 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-}
-
-/* more code */
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* make this better */
-
-body {
-  color: #fb5;
-  background-color: #334;
-  font-size: 1.2rem;
+    font-size: 100%;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 1rem auto;
+    background-color: #334;
+    background-image: url(../../img/background.gif);
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: repeat-x;
+    max-width: 80%;
 }
 
 a:link {
@@ -498,16 +488,39 @@ a:active {
   background-color: #ec8;
 }
 
-#header {
-  color: #ec8;
-  background-color: #334;
-  border-color: #667;
+h1 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 2.4em normal;
 }
 
-#navigation {
-  color: #455;
-  background-color: #789;
-  border-color: #667;
+h2 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 1.8em normal;
+  margin-top: 1em;
+}
+
+h3 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 1.4em normal;
+  margin-top: 1em;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#content {
+  line-height: 1.8em;
+}
+
+#content p {
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #content {
@@ -516,7 +529,177 @@ a:active {
   border-color: #667;
 }
 
-#navigation ul {
+#content img {
+  border-color: #ba9;
+  outline-color: #dcb;
+}
+
+#content {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;
+}
+
+#content img {
+  border-width: .1em;
+  border-style: solid;
+  outline-width: .1em;
+  outline-style: solid;
+}
+
+@media @import 'modules/_header.css' {
+
+.table_container
+{
+  width:640px;
+}
+
+.tableheader-row,
+.tabledata-row
+{
+  position: relative;
+}
+
+.tableheader-row,
+.tabledata-row
+{
+  width:inherit;
+  color: #eee;
+  background-color:#455;
+}
+
+.tableheader-row .col,
+.tabledata-row .col
+{
+  float:left;
+  width:200px;
+  color:#fff;
+}
+
+.tableheader-row .col
+{
+
+  padding:0.4rem;
+  margin: 0.4rem 0.1rem;
+  background-color:#eb6;
+  color: #eee;
+}
+
+.tabledata-row .col
+{
+  margin: 0.4rem 0.1rem;
+  padding:0.4rem;
+  color: #000;
+}
+}
+
+/*html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+body {
+  color: #fb5;
+  background-color: #334;
+  font-size: 1.2rem;
+}
+a:link {
+  color: #445;
+  background-color: #eb6;
+}
+
+a:visited {
+  color: #345;
+  background-color: #eb6;
+}
+
+a:hover {
+  color: #667;
+  background-color: #fb5;
+}
+
+a:active {
+  color: #778;
+  background-color: #ec8;
+}
+#content {
+  color: #223;
+  background-color: #edc;
+  border-color: #667;
+}
+body {
+  margin: 1em 10%;
+  background-image: url(/assets/img/background.gif);
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: repeat-x;
+  max-width: 80em;
+}*/
+
+th {
+  color: #edc;
+  background-color: #455;
+}
+
+tr td {
+  color: #223;
+  background-color: #eb6;
+}
+
+tr.odd td {
+  color: #223;
+  background-color: #ec8;
+}
+
+tr.highlight td {
+  color: #223;
+  background-color: #cba;
+}
+
+th {
+  color: #edc;
+  background-color: #455;
+}
+
+tr td {
+  color: #223;
+  background-color: #eb6;
+}
+
+tr.odd td {
+  color: #223;
+  background-color: #ec8;
+}
+
+tr.highlight td {
+  color: #223;
+  background-color: #cba;
+}
+
+dl {
+  overflow: hidden;
+}
+
+dt {
+  float: left;
+}
+
+dd {
+  float: left;
+}
+
+#navigation {
+  color: #455;
+  background-color: #789;
+  border-color: #667;
+}
+
+navigation ul {
   border-color: #99a;
 }
 
@@ -543,53 +726,6 @@ a:active {
 #navigation a.here:active {
   color: #eef;
   background-color: #799;
-}
-
-#content img {
-  border-color: #ba9;
-  outline-color: #dcb;
-}
-
-#imagegallery a {
-  background-color: transparent;
-}
-
-th {
-  color: #edc;
-  background-color: #455;
-}
-
-tr td {
-  color: #223;
-  background-color: #eb6;
-}
-
-tr.odd td {
-  color: #223;
-  background-color: #ec8;
-}
-
-tr.highlight td {
-  color: #223;
-  background-color: #cba;
-}
-
-body {
-  margin: 1em 10%;
-  background-image: url(/assets/img/background.gif);
-  background-attachment: fixed;
-  background-position: top left;
-  background-repeat: repeat-x;
-  max-width: 80em;
-}
-
-#header {
-  background-image: url(../images/guitarist.gif);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  border-width: .1em;
-  border-style: solid;
-  border-bottom-width: 0;
 }
 
 #navigation {
@@ -621,39 +757,21 @@ body {
   border-right: .1em solid;
 }
 
-#content {
-  border-width: .1em;
-  border-style: solid;
-  border-top-width: 0;
-  padding: 2em 10%;
-  line-height: 1.8em;
+#navigation {
+  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
 }
 
-#about #header {
-  background-image: url(../images/lineup.gif);
-}
-
-#photos #header {
-  background-image: url(../images/basshead.gif);
-}
-
-#live #header {
-  background-image: url(../images/bassist.gif);
-}
-
-#contact #header {
-  background-image: url(../images/drummer.gif);
-}
-
-#content img {
-  border-width: .1em;
-  border-style: solid;
-  outline-width: .1em;
-  outline-style: solid;
+#navigation a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #imagegallery li {
   display: inline;
+}
+
+#imagegallery a {
+  background-color: transparent;
 }
 
 #slideshow {
@@ -678,81 +796,13 @@ img#preview {
   outline-width: 0;
 }
 
-dl {
+#slideshow {
+  width: 150px;
+  height: 150px;
+  position: relative;
   overflow: hidden;
-}
-
-dt {
-  float: left;
-}
-
-dd {
-  float: left;
-}
-
-label {
-  display: block;
-}
-
-fieldset {
-  border: 0;
-}
-
-td {
-  padding: .5em 3em;
-}
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#navigation {
-  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
-}
-
-#navigation a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#content {
-  line-height: 1.8em;
-}
-
-#content p {
-  margin: 1em 0;
-}
-
-h1 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 2.4em normal;
-}
-
-h2 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 1.8em normal;
-  margin-top: 1em;
-}
-
-h3 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 1.4em normal;
-  margin-top: 1em;
 }
 
 #imagegallery li {
   list-style-type: none;
-}
-
-dt {
-  margin-right: 1em;
-}
-
-dd {
-  margin-right: 3em;
-}
-
-textarea {
-  font-family: "Helvetica", "Arial", sans-serif;
 }

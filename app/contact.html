@@ -10,7 +10,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
 <body>
@@ -30,12 +30,20 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="content">
-        <h1>Welcome</h1>
-        <p class="intro">Welcome to the official website of Jay Skript and the Domsters. Here, you can <a href="about.html">learn more about the band</a>, view <a href="photos.html">photos of the band</a>, find out about <a href="live.html">tour dates</a> and <a href="contact.html">get in touch with the band</a>.</p>
-    </div>
+
+    <!--want to make font sizes smaller-->
+    <div class="container" >
+               <label><b>Name:</b></label>
+               <input type="name" placeholder="Name" name="uname" required>
+               <label><b>Email:</b></label>
+               <input type="email" placeholder="Email" name="psw" required>
+               <label><b>Message:</b></label>
+                <textarea name="name" placeholder="Write your message here." rows="4" cols="30"></textarea>
+                <br>
+               <button type="send ">Send</button>
+            </div>
     <script src="assets/js/global.js"></script>
-    <script src="assets/js/home.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

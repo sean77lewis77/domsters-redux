@@ -1,0 +1,43 @@
+.table_container
+{
+  width:640px;
+}
+
+.tableheader-row,
+.tabledata-row
+{
+  position: relative;
+}
+
+.tableheader-row,
+.tabledata-row
+{
+  width:inherit;
+  color: #eee;
+  background-color:#455;
+}
+
+.tableheader-row .col,
+.tabledata-row .col
+{
+  float:left;
+  width:200px;
+  color:#fff;
+}
+
+.tableheader-row .col
+{
+
+  padding:0.4rem;
+  margin: 0.4rem 0.1rem;
+  background-color:#eb6;
+  color: #eee;
+}
+
+.tabledata-row .col
+{
+  margin: 0.4rem 0.1rem;
+  padding:0.4rem;
+  color: #000;
+}
+

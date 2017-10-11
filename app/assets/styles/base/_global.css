@@ -3,20 +3,46 @@ html {
 }
 
 body {
+    font-size: 100%;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 1rem auto;
+    background-color: #334;
+    background-image: url(../../img/background.gif);
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: repeat-x;
+    max-width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*html {
+  font-size: 16px;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
 /* more code */
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 /* make this better */
 
-body {
+/*body {
   color: #fb5;
   background-color: #334;
   font-size: 1.2rem;
@@ -94,11 +120,11 @@ a:active {
   outline-color: #dcb;
 }
 
-#imagegallery a {
+/*#imagegallery a {
   background-color: transparent;
-}
+}*/
 
-th {
+/*th {
   color: #edc;
   background-color: #455;
 }
@@ -194,9 +220,9 @@ body {
   border-style: solid;
   outline-width: .1em;
   outline-style: solid;
-}
+}*/
 
-#imagegallery li {
+/*#imagegallery li {
   display: inline;
 }
 
@@ -220,9 +246,9 @@ img#preview {
   position: absolute;
   border-width: 0;
   outline-width: 0;
-}
+}*/
 
-dl {
+/*dl {
   overflow: hidden;
 }
 
@@ -232,17 +258,17 @@ dt {
 
 dd {
   float: left;
-}
+}*/
 
-label {
+/*label {
   display: block;
 }
 
 fieldset {
   border: 0;
-}
+}*/
 
-td {
+/*td {
   padding: .5em 3em;
 }
 
@@ -295,8 +321,8 @@ dt {
 
 dd {
   margin-right: 3em;
-}
+}*/
 
-textarea {
+/*textarea {
   font-family: "Helvetica", "Arial", sans-serif;
-}
+}*/

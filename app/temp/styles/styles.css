@@ -756,3 +756,46 @@ dd {
 textarea {
   font-family: "Helvetica", "Arial", sans-serif;
 }
+
+.table_container
+{
+  width:640px;
+}
+
+.tableheader_row,
+.tabledata_row
+{
+  position: relative;
+}
+
+.tableheader_row,
+.tabledata_row
+{
+  width:inherit;
+  color: #eee;
+  background-color:#455;
+}
+
+.tableheader_row .col,
+.tabledata_row .col
+{
+  float:left;
+  width:200px;
+  color:#fff;
+}
+
+.tableheader_row .col
+{
+
+  padding:4px;
+  margin: 4px 1px;
+  background-color:#eb6;
+  color: #eee;
+}
+
+.tabledata_row .col
+{
+  margin: 4px 1px;
+  padding:4px;
+  color: #000;
+}

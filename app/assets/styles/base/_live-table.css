@@ -3,41 +3,41 @@
   width:640px;
 }
 
-.tableheader_row,
-.tabledata_row
+.tableheader-row,
+.tabledata-row
 {
   position: relative;
 }
 
-.tableheader_row,
-.tabledata_row
+.tableheader-row,
+.tabledata-row
 {
   width:inherit;
   color: #eee;
   background-color:#455;
 }
 
-.tableheader_row .col,
-.tabledata_row .col
+.tableheader-row .col,
+.tabledata-row .col
 {
   float:left;
   width:200px;
   color:#fff;
 }
 
-.tableheader_row .col
+.tableheader-row .col
 {
 
-  padding:4px;
-  margin: 4px 1px;
+  padding:0.4rem;
+  margin: 0.4rem 0.1rem;
   background-color:#eb6;
   color: #eee;
 }
 
-.tabledata_row .col
+.tabledata-row .col
 {
-  margin: 4px 1px;
-  padding:4px;
+  margin: 0.4rem 0.1rem;
+  padding:0.4rem;
   color: #000;
 }
 

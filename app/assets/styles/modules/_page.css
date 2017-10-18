@@ -1,0 +1,10 @@
+.page {
+    background-color: $tan;
+    border-color: $dark-grey;
+    border-style: solid;
+    border-top-width: 0;
+    border-width: .1em;
+    color: $black;
+    line-height: 1.8em;
+    padding: 2em 10%;
+}

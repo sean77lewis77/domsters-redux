@@ -10,11 +10,12 @@
 @import 'base/_global.css';
 
 
+
 /*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');*/
 
 @import 'base/_live-table.css';
 @import 'modules/_header.css';
-@import 'modules/_content.css';
+@import 'modules/_page.css';
 @import 'modules/_table.css';
 @import 'modules/_navigation.css';
 @import 'modules/_gallery.css';

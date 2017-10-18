@@ -450,17 +450,34 @@ template {
   display: none;
 }
 
+/*@import 'base/_variables';*/
+
 /*@import 'base/_mixins';*/
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 body {
+    font-family: 'Slabo 27px', serif;
+    color: #333;
+}
+
+/* more code */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* make this better */
+
+body {
+    color: #fb5;
+    font-size: 1.2rem;
     font-size: 100%;
-    font-family: "Helvetica","Arial",sans-serif;
+    font-family: "Helvetica", "Arial", sans-serif;
     margin: 1rem auto;
-    background-color: #334;
     background-image: url(../../img/background.gif);
     background-attachment: fixed;
     background-position: top left;
@@ -469,87 +486,102 @@ body {
 }
 
 a:link {
-  color: #445;
-  background-color: #eb6;
+    color: #445;
+    background-color: #eb6;
 }
 
 a:visited {
-  color: #345;
-  background-color: #eb6;
+    color: #345;
+    background-color: #eb6;
 }
 
 a:hover {
-  color: #667;
-  background-color: #fb5;
+    color: #667;
+    background-color: #fb5;
 }
 
 a:active {
-  color: #778;
-  background-color: #ec8;
+    color: #778;
+    background-color: #ec8;
 }
 
 h1 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 2.4em normal;
+    font-family: "Georgia", "Times New Roman", sans-serif;
+    font: 2.4em normal;
 }
 
 h2 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 1.8em normal;
-  margin-top: 1em;
+    font-family: "Georgia", "Times New Roman", sans-serif;
+    font: 1.8em normal;
+    margin-top: 1em;
 }
 
 h3 {
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font: 1.4em normal;
-  margin-top: 1em;
+    font-family: "Georgia", "Times New Roman", sans-serif;
+    font: 1.4em normal;
+    margin-top: 1em;
+}
+
+#navigation a:link,
+#navigation a:visited {
+    color: #eef;
+    background-color: transparent;
+    border-color: #99a;
 }
 
 a {
-  font-weight: bold;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navigation a.here:link,
+#navigation a.here:visited,
+#navigation a.here:hover,
+#navigation a.here:active {
+    color: #eef;
+    background-color: #799;
 }
 
 #content {
-  line-height: 1.8em;
+    line-height: 1.8em;
 }
 
 #content p {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #content {
-  color: #223;
-  background-color: #edc;
-  border-color: #667;
+    color: #223;
+    background-color: #edc;
+    border-color: #667;
 }
 
 #content img {
-  border-color: #ba9;
-  outline-color: #dcb;
+    border-color: #ba9;
+    outline-color: #dcb;
 }
 
 #content {
-  border-width: .1em;
-  border-style: solid;
-  border-top-width: 0;
-  padding: 2em 10%;
-  line-height: 1.8em;
+    border-width: .1em;
+    border-style: solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    line-height: 1.8em;
 }
 
 #content img {
-  border-width: .1em;
-  border-style: solid;
-  outline-width: .1em;
-  outline-style: solid;
+    border-width: .1em;
+    border-style: solid;
+    outline-width: .1em;
+    outline-style: solid;
 }
 
-@media @import 'modules/_header.css' {
+/*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');*/
 
 .table_container
 {
@@ -593,6 +625,36 @@ img {
   padding:0.4rem;
   color: #000;
 }
+
+#header {
+    background-color: #334;
+    background-image: url(../../img/guitarist.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+}
+
+#header {
+    color: #ec8;
+    border-color: #667;
+}
+
+#about #header {
+  background-image: url(../images/lineup.gif);
+}
+
+#photos #header {
+  background-image: url(../images/basshead.gif);
+}
+
+#live #header {
+  background-image: url(../images/bassist.gif);
+}
+
+#contact #header {
+  background-image: url(../images/drummer.gif);
 }
 
 /*html {
@@ -694,76 +756,76 @@ dd {
 }
 
 #navigation {
-  color: #455;
-  background-color: #789;
-  border-color: #667;
+    color: #455;
+    background-color: #789;
+    border-color: #667;
 }
 
-navigation ul {
-  border-color: #99a;
+#navigation ul {
+    border-color: #99a;
 }
 
 #navigation a:link,
 #navigation a:visited {
-  color: #eef;
-  background-color: transparent;
-  border-color: #99a;
+    color: #eef;
+    background-color: transparent;
+    border-color: #99a;
 }
 
 #navigation a:hover {
-  color: #445;
-  background-color: #eb6;
+    color: #445;
+    background-color: #eb6;
 }
 
 #navigation a:active {
-  color: #667;
-  background-color: #ec8;
+    color: #667;
+    background-color: #ec8;
 }
 
 #navigation a.here:link,
 #navigation a.here:visited,
 #navigation a.here:hover,
 #navigation a.here:active {
-  color: #eef;
-  background-color: #799;
+    color: #eef;
+    background-color: #799;
 }
 
 #navigation {
-  background-image: url(../images/navbar.gif);
-  background-position: bottom left;
-  background-repeat: repeat-x;
-  border-width: .1em;
-  border-style: solid;
-  border-bottom-width: 0;
-  border-top-width: 0;
-  padding-left: 10%;
+    background-image: url(../images/navbar.gif);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    padding-left: 10%;
 }
 
 #navigation ul {
-  width: 100%;
-  overflow: hidden;
-  border-left-width: .1em;
-  border-left-style: solid;
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
 }
 
 #navigation li {
-  display: inline;
+    display: inline;
 }
 
 #navigation li a {
-  display: block;
-  float: left;
-  padding: .5em 2em;
-  border-right: .1em solid;
+    display: block;
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
 }
 
 #navigation {
-  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+    font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
 }
 
 #navigation a {
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #imagegallery li {

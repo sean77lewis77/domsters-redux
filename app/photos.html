@@ -14,61 +14,83 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    <!-- Add your site or application content here -->
-    <div class="header">
-        <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
+    <div class="container">
+        <!--[if lte IE 9]>
+                  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+              <![endif]-->
+        <!-- Add your site or application content here -->
+        <div class="header">
+            <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">DOMSTERS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="photos.html">Photos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live.html">Live</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content photos">
+            <div class="row">
+                <div class="col">
+                    <h1 class="photos__title">Photos of the Band</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col">
+                    <ul id="imageGallery">
+                        <li>
+                            <a href="assets/img/photos/concert.jpg" title="Class is over!">
+                <img src="assets/img/photos/thumbnail_concert.jpg" alt="the band in concert" />
+              </a>
+                        </li>
+                        <li>
+                            <a href="assets/img/photos/concert.jpg" title="The crowd goes wild">
+                <img src="assets/img/photos/thumbnail_concert.jpg" alt="the band in concert" />
+              </a>
+                        </li>
+                        <li>
+                            <a href="assets/img/photos/bassist.jpg" title="An atmospheric moment">
+                <img src="assets/img/photos/thumbnail_bassist.jpg" alt="the bassist" />
+              </a>
+                        </li>
+                        <li>
+                            <a href="assets/img/photos/guitarist.jpg" title="Rocking out">
+                <img src="assets/img/photos/thumbnail_guitarist.jpg" alt="the guitarist" />
+              </a>
+                        </li>
+                        <li>
+                            <a href="assets/img/photos/crowd.jpg" title="Encore! Encore!">
+                <img src="assets/img/photos/thumbnail_crowd.jpg" alt="the audience" />
+              </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="placeholderContainer" class="col"></div>
+            </div>
+            <!-- /.row -->
+        </div>
     </div>
-    <div class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="live.html">Live</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <h1>Photos of the Band</h1>
-
-<ul id="imagegallery">
-      <li>
-        <a href="assets/img/photos/concert.jpg" title="The crowd goes wild">
-          <img src="assets/img/photos/thumbnail_concert.jpg" alt="the band in concert" />
-        </a>
-      </li>
-      <li>
-        <a href="assets/img/photos/bassist.jpg" title="An atmospheric moment">
-          <img src="assets/img/photos/thumbnail_bassist.jpg" alt="the bassist" />
-        </a>
-      </li>
-      <li>
-        <a href="assets/img/photos/guitarist.jpg" title="Rocking out">
-          <img src="assets/img/photos/thumbnail_guitarist.jpg" alt="the guitarist" />
-        </a>
-      </li>
-      <li>
-        <a href="assets/img/photos/crowd.jpg" title="Encore! Encore!">
-          <img src="assets/img/photos/thumbnail_crowd.jpg" alt="the audience" />
-        </a>
-      </li>
-    </ul>
-    
-    <p id="description">Choose an image</p>
-
-    <img id="placeholder" src="assets/img/photos/concert.jpg" alt="my image gallery">
-    <img id="placeholder" src="assets/img/photos/bassist.jpg" alt="my image gallery">
-    <img id="placeholder" src="assets/img/photos/guitarist.jpg" alt="my image gallery">
-    <img id="placeholder" src="assets/img/photos/crowd.jpg" alt="my image gallery">
-
-
-</div>
     <script src="assets/js/global.js"></script>
-    <script src="assets/js/home.js"></script>
-
+    <script src="assets/js/photos.js"></script>
 </body>
 
 </html>
-

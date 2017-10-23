@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/8.6.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js install
+  /usr/local/Cellar/node/8.6.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js add -D eslint-config-airbnb@16.1.0
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -20,7 +20,8 @@ npm manifest:
     "description": "Create a website that will list all US retails stores that have closed in 2017",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lint": "eslint ."
     },
     "keywords": [],
     "author": "",

@@ -32,18 +32,38 @@
     </div>
 
     <!--want to make font sizes smaller-->
-    <div class="container" >
-               <label><b>Name:</b></label>
-               <input type="name" placeholder="Name" name="uname" required>
-               <label><b>Email:</b></label>
-               <input type="email" placeholder="Email" name="psw" required>
-               <label><b>Message:</b></label>
-                <textarea name="name" placeholder="Write your message here." rows="4" cols="30"></textarea>
-                <br>
-               <button type="send ">Send</button>
+    <div class="page-section">
+      <div class="wrapper">
+        <div class="row row--gutters">
+          <div class="row__medium-4 row__medium-4--larger
+            row__b-margin-until-medium">
+            <h2 class="headline headline--centered"></h2>
+            <div>
+              <label>Name:</label>
+              <input type="name" placeholder="Name" name="uname">
             </div>
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/contact.js"></script>
+            <div>
+              <label>Email:</label>
+              <input type="email" placeholder="Email" name="psw">
+            </div>
+            <div>
+              <label>Message:</label>
+              <textarea name="name" rows="4" cols="30"></textarea>
+            </div>
+            <button type="submit" value="send ">Send</button>
+          </div><!-- ./row__4 -->
+          <div class="row__medium-8 row__medium-8--smaller">
+            <h2 class="headline headline--no-t-margin">
+              Here&rsquo;s how we got started&hellip;
+            </h2>
+            <img src="http://via.placeholder.com/350x150"
+            alt="placeholder img">
+          </div>
+      </div><!-- ./row -->
+      </div><!-- ./wrapper -->
+    </div><!-- ./page-section -->
+    <!-- <script src="assets/js/global.js"></script> -->
+    <!-- <script src="assets/js/contact.js"></script> -->
 </body>
 
 </html>

@@ -4,6 +4,10 @@
 /* Then, if I want an element to have like a 28px font-size, I simply have to do .element { font-size: 2.8rem; }, no matter the size of its parent. */
 
 /* Everything is great, however rem isn’t supported in all browsers, especially not in Internet Explorer 8, which is still required in most projects. It means we have to give a fallback for this browser. */
+* {
+  box-sizing: border-box;
+}
+
 html { 
     font-size: 62.5%;
 }
@@ -41,6 +45,7 @@ img {
 a {
     font-weight: bold;
     text-decoration: none;
+    color: $orange;
 }
 
 a:link {

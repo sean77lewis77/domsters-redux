@@ -28,6 +28,10 @@
     margin: 0 auto; 
   }
 
+  &--no-t-margin {
+    margin-top: 0;
+  }
+
   &--bottom-margin-small {
     margin-bottom: 0.5em;
   }

@@ -1,0 +1,68 @@
+.large-hero {
+  position: relative;
+
+  border-bottom: 10px solid $purple;
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    text-align: center;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  &__title {
+    color: $purple;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0;
+
+    /* think of atSmallest as mobile first design */
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.8rem;
+    }
+    
+  }
+
+  &__subtitle {
+    color: #2f5572;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.8rem
+    }
+  }
+
+  &__description {
+    color: $white;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba($black, 0.1);
+    max-width: 30rem;
+    margin: 0 auto;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+}

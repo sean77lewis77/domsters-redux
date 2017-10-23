@@ -1,10 +1,24 @@
-html {
-    font-size: 16px;
+/* https://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/ */
+/* Because all browsers have a default font-size of 16px, setting the font-size to 62.5% on the html element gives it a font-size of 10px (10 / 16 * 100 = 62.5) without explicitely setting it to 10px which would prevent zooming. Then, setting a font-size of 1.6rem on the body element simply results in a font-size of 16px, cascading through the whole DOM tree. */
+
+/* Then, if I want an element to have like a 28px font-size, I simply have to do .element { font-size: 2.8rem; }, no matter the size of its parent. */
+
+/* Everything is great, however rem isn’t supported in all browsers, especially not in Internet Explorer 8, which is still required in most projects. It means we have to give a fallback for this browser. */
+html { 
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Slabo 27px', serif;
-    color: #333;
+    font-size: 1.6rem;
+    /* color: #fb5; */
+    background-color: $purple;
+    margin: 1rem auto;
+    background-image: url(/assets/img/background.gif);
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: repeat-x;
+    max-width: 80%;
 }
 
 .container {
@@ -13,38 +27,20 @@ body {
     border: 5px solid #000000;
 }
 
-
-
-
-
-
-
-/* more code */
+h1 {
+   font-family: 'Niconne', cursive;
+   font-size: 6rem;
+}
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-
-
-
-
-
-
-/* make this better */
-
-body {
-    color: #fb5;
-    font-size: 1.2rem;
-    font-size: 100%;
-    font-family: "Helvetica", "Arial", sans-serif;
-    margin: 1rem auto;
-    background-image: url(/assets/img/background.gif);
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: repeat-x;
-    max-width: 80%;
+/* links */
+a {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:link {
@@ -67,46 +63,6 @@ a:active {
     background-color: #ec8;
 }
 
-h1 {
-    font-family: "Georgia", "Times New Roman", sans-serif;
-    font: 2.4em normal;
-}
-
-h2 {
-    font-family: "Georgia", "Times New Roman", sans-serif;
-    font: 1.8em normal;
-    margin-top: 1em;
-}
-
-h3 {
-    font-family: "Georgia", "Times New Roman", sans-serif;
-    font: 1.4em normal;
-    margin-top: 1em;
-}
-
-#navigation a:link,
-#navigation a:visited {
-    color: #eef;
-    background-color: transparent;
-    border-color: #99a;
-}
-
-
-
-a {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#navigation a.here:link,
-#navigation a.here:visited,
-#navigation a.here:hover,
-#navigation a.here:active {
-    color: #eef;
-    background-color: #799;
-}
-
-
 #content {
     line-height: 1.8em;
 }
@@ -115,24 +71,16 @@ a {
     margin: 1em 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 #content {
     color: #223;
     background-color: #edc;
     border-color: #667;
 }
 
-
 #content img {
     border-color: #ba9;
     outline-color: #dcb;
 }
-
 
 #content {
     border-width: .1em;

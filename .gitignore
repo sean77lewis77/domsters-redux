@@ -6,4 +6,4 @@ app/temp/styles/styles.css
 .DS_Storea
 
 # Don't save vim .swp files
-.swp
+*.swp

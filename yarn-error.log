@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/8.6.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js add -D eslint-config-airbnb@16.1.0
+  /usr/local/Cellar/node/8.6.0/bin/node /usr/local/Cellar/yarn/1.1.0/libexec/bin/yarn.js install
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -34,6 +34,10 @@ npm manifest:
     "devDependencies": {
       "autoprefixer": "^7.1.2",
       "browser-sync": "^2.18.13",
+      "eslint-config-airbnb": "^16.1.0",
+      "eslint-plugin-import": "^2.7.0",
+      "eslint-plugin-jsx-a11y": "^6.0.1",
+      "eslint-plugin-react": "^7.4.0",
       "gulp": "^3.9.1",
       "gulp-postcss": "^7.0.0",
       "gulp-watch": "^4.3.11",

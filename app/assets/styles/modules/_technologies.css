@@ -1,0 +1,32 @@
+.technologies {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 2rem 1px 2rem;
+
+  &__photo {
+    position: relative;
+    top: -8rem;
+    
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    height: 160px;
+    margin: 0 auto -8rem auto;
+    overflow: hidden;
+    width: 160px;
+  }
+
+  &__title {
+    color: $blue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $orange;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}

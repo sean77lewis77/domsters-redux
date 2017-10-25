@@ -11,6 +11,10 @@
     font-weight: 500;
   }
 
+  &--purple {
+    color: $purple;
+  }
+
   &__icon {
     display: block;
     margin-left: auto;
@@ -19,7 +23,10 @@
   }
   
   @mixin atSmall {
-    margin-right: 0.5rem;
+    position: relative;
+    top: 8px;
+
+    margin-right: 1rem;
     margin-left: 0;
     margin-bottom: 0;
     display: inline-block;

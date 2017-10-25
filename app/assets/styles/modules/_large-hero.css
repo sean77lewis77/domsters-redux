@@ -1,7 +1,7 @@
 .large-hero {
   position: relative;
 
-  border-bottom: 10px solid $purple;
+  border-bottom: 1px solid $purple;
 
   &__text-content {
     position: absolute;
@@ -16,16 +16,16 @@
   &__title {
     color: $purple;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 4rem;
     margin: 0;
 
     /* think of atSmallest as mobile first design */
     @mixin atSmall {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     @mixin atMedium {
-      font-size: 3.2rem;
+      font-size: 4rem;
     }
 
     @mixin atLarge {
@@ -35,9 +35,9 @@
   }
 
   &__subtitle {
-    color: #2f5572;
+    color: $blue;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin: 0;
 
     @mixin atSmall {

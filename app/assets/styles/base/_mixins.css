@@ -1,7 +1,25 @@
 /* smallest not defined */
 
-@define-mixin atSmall {
-    @media (min-width: 530px) {
+@define-mixin atPhones {
+    @media (min-width: 480px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atTablets {
+    @media (min-width: 768px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atDesktops {
+    @media (min-width: 992px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atWideScreens {
+    @media (min-width: 1200px) {
         @mixin-content;
     }
 }

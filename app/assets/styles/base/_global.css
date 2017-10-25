@@ -1,20 +1,27 @@
-html {
-    font-size: 62.5%;
-}
+    html {
+    /* https://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/ */
+    /* Because all browsers have a default font-size of 16px, setting the font-size to 62.5% on the html element gives it a font-size of 10px (10 / 16 * 100 = 62.5) without explicitely setting it to 10px which would prevent zooming. Then, setting a font-size of 1.6rem on the body element simply results in a font-size of 16px, cascading through the whole DOM tree. */
+    /* Then, if I want an element to have like a 28px font-size, I simply have to do .element { font-size: 2.8rem; }, no matter the size of its parent. */
+    /* Everything is great, however rem isn’t supported in all browsers, especially not in Internet Explorer 8, which is still required in most projects. It means we have to give a fallback for this browser. */
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: 'Lato', 'sans-serif';
-    color: $grey;
-    font-size: 1.6rem;
-    max-width: 80%;
-    margin: 0 auto;
-}
+    html {
+        font-size: 62.5%;
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    body {
+        font-family: 'Lato', 'sans-serif';
+        font-size: 1.6rem;
+    }
 
-h1 {
-    font-family: 'Niconne', cursive;
-}
+    h1 {
+        font-family: 'Niconne', cursive;
+        font-size: 6rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }

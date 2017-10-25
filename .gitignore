@@ -3,4 +3,7 @@ node_modules/
 app/temp/styles/styles.css
 
 # OS or Editor folders
-.DS_Store
+.DS_Storea
+
+# Don't save vim .swp files
+*.swp

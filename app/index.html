@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="eng">
 
 <head>
     <meta charset="utf-8">
@@ -18,10 +18,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="header" style="display: none;">
-        <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
-    </div>
-    <div class="navigation" style="display: none;">
+    <header class="site-header" style="display: none">
+        <div class="wrapper">
+            <div class="site-header__logo">
+                <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
+            </div>
+        </div>
+    </header>
+    <nav class="primary-nav primary-nav--pull-right" style="display:none">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -29,7 +33,7 @@
             <li><a href="live.html">Live</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </div>
+    </nav>
     <div class="large-hero">
         <div class="large-hero__text-content">
             <h1 class="large-hero__title">Domsters Redux</h1>
@@ -44,9 +48,107 @@
         <p>
             <a class="btn btn--orange" href="contact.html">Contact Us</a>
         </p>
-    </footer>
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/home.js"></script>
+        <div class="large-hero">
+            <picture>
+                <source srcset="assets/images/hero--large.jpg 1920w,
+            assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width:
+            1380px)" />
+                <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width:
+            990px)" />
+                <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width:
+            640px)" />
+                <img src="assets/images/hero--smaller.jpg" srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="large-hero__image" />
+            </picture>
+            <div class="large-hero__text-content">
+                <div class="wrapper">
+                    <h1 class="large-hero__title">Large Hero Title</h1>
+                    <h2 class="large-hero__subtitle">Large Hero SubTitle</h2>
+                    <p class="large-hereo__description">Amet dolor molestiae ducimus laudantium quisquam ipsa Dolore eveniet voluptatem aliquam corrupti odit Molestias at recusandae porro debitis animi? Est quis quod sapiente enim molestias nesciunt minus Soluta eligendi doloribus</p>
+                    <p><a class="btn btn--orange btn--large" href="#">Get Started
+              Today</a></p>
+                </div>
+                <!-- /.wrapper -->
+            </div>
+        </div>
+        <!-- /.large-hero -->
+        <div class="page">
+            <h1 class="headline headline--centered">Welcome</h1>
+            <p class="intro">Welcome to the official website of Jay Skript and the Domsters. Here, you can <a href="about.html">learn more about the band</a>, view <a href="photos.html">photos of the band</a>, find out about <a href="live.html">tour dates</a> and <a href="contact.html">get in touch with the band</a>.</p>
+        </div>
+        <!-- ./page -->
+        <div id="our-beginning" class="page-section">
+            <p>OUR BEGINNING Sit ut sapiente maxime maiores quibusdam Veniam laboriosam officia suscipit voluptate rerum Explicabo inventore facere maxime quas hic. Necessitatibus ipsum cupiditate commodi consequatur dolorum Provident voluptatum alias ut nemo error
+            </p>
+        </div>
+        <!-- #/our-beginning -->
+        <div id="features" class="page-section page-secton--blue">
+            <div class="wrapper">
+                <h2 class="section-title"><img class="section-title__icon"
+            src="assets/images/icons/star.svg" alt="star icon">Our <strong>Features</strong></h2>
+                <div class="row row--gutters-large">
+                    <div class="row__medium-6">
+                        <div class="feature-item">
+                            <img class="feature-item__icon" src="assets/images/icons/rain.svg" alt="rain icon">
+                            <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
+                            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+                        </div>
+                        <div class="feature-item">
+                            <img class="feature-item__icon" src="assets/images/icons/globe.svg" alt="globe icon">
+                            <h3 class="feature-item__title">Global Guides</h3>
+                            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
+                        </div>
+                    </div>
+                    <!-- /.row__medium-6 -->
+                    <div class="row__medium-6">
+                        <div class="feature-item">
+                            <img class="feature-item__icon" src="assets/images/icons/wifi.svg" alt="wifi icon">
+                            <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
+                            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+                        </div>
+                        <div class="feature-item">
+                            <img class="feature-item__icon" src="assets/images/icons/fire.svg" alt="fire icon">
+                            <h3 class="feature-item__title">Survival Kit</h3>
+                            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+                        </div>
+                    </div>
+                    <!-- /.row__medium-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- ./wrapper -->
+        </div>
+        <!-- #features -->
+        <div id="testimonials" class="page-section">
+            <div class="wrapper">
+                <h2 class="headline headline--centered headline-light
+            headline--bottom-margin-small">Testimonials</h2>
+                <h3 class="headline headline--centered headline--orange
+            headline--small headline--narrow headline--light
+            headline--bottom-margin-large">
+            Here we have a heading that has a few BEM modifiers on it. It
+            shows you how flexible modular code can be
+          </h3>
+                <p>
+                    Amet voluptatibus architecto pariatur eos eius. Dolor dicta saepe itaque expedita consequatur ipsa magnam magni reiciendis? Nulla asperiores alias dolorum aperiam unde! Sunt unde ratione tempora impedit cum dolore. Numquam.
+                </p>
+            </div>
+            <!-- ./wrapper -->
+        </div>
+        <!-- #/testimonals -->
+        <div class="wrapper">
+            <div class="wrapper wrapper--medium wrapper--b-margin">
+                <p>
+                    This is a nested wrapper with specific bottom margin Adipisicing quo temporibus ipsa obcaecati officiis Animi modi minus similique rem repellendus. Suscipit commodi quos impedit quas cumque nihil asperiores Sint accusantium delectus quam a tenetur. Maiores non recusandae veniam?
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2017 <a href="#" class="btn btn--orange
+          btn--large">Get in Touch</a></p>
+            >>>>>>> peh2-resp-images
+        </footer>
+        <script src="assets/js/global.js"></script>
+        <script src="assets/js/home.js"></script>
 </body>
 
 </html>

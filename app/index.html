@@ -10,7 +10,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
 <body>
@@ -18,10 +18,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="header">
+    <div class="header" style="display: none;">
         <img src="assets/img/logo.gif" alt="Jay Skript and the Domsters" />
     </div>
-    <div class="navigation">
+    <div class="navigation" style="display: none;">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -30,10 +30,21 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="content">
-        <h1>Welcome</h1>
-        <p class="intro">Welcome to the official website of Jay Skript and the Domsters. Here, you can <a href="about.html">learn more about the band</a>, view <a href="photos.html">photos of the band</a>, find out about <a href="live.html">tour dates</a> and <a href="contact.html">get in touch with the band</a>.</p>
+    <div class="large-hero">
+        <div class="large-hero__text-content">
+            <h1 class="large-hero__title">Domsters Redux</h1>
+            <h2 class="large-hero__subtitle">New and Improved</h2>
+            <p class="large-hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut possimus dolore fuga, beatae recusandae voluptatum, ab excepturi ipsa libero accusantium, dicta nesciunt quam molestias pariatur nam alias, fugit veritatis molestiae.</p>
+            <p><a href="#" class="btn btn--large">What do you think?</a></p>
+        </div>
+        <!-- /.large-hero__text-content -->
     </div>
+    <!-- /.large-hero -->
+    <footer>
+        <p>
+            <a class="btn btn--orange" href="contact.html">Contact Us</a>
+        </p>
+    </footer>
     <script src="assets/js/global.js"></script>
     <script src="assets/js/home.js"></script>
 </body>
